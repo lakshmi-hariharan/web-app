@@ -122,7 +122,7 @@ app.get("/expenses", requiresAuth(), async (req, res, next) => {
    });
    // 👆 end of changes 👆
 
-     const expenses = await axios.get(`${API_URL}/reports`);
+     //const expenses = await axios.get(`${API_URL}/reports`);
      res.render("expenses", {
        user: req.oidc && req.oidc.user,
        expenses: expenses.data,
